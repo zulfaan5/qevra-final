@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qevra Fest'26 - Student Festival Portal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+<style>
+/***** About Section *****/
+.about-section { padding: 24px 20px 40px; background: transparent; }
+.about-container { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1.4fr 1fr; gap: 32px; align-items: start; }
+.about-title { font-size: clamp(1.4rem, 4.5vw, 2rem); font-weight: 900; margin-bottom: 12px; color: var(--text-dark); }
+.about-content p { color: var(--text-dark); font-size: 1rem; line-height: 1.8; margin-bottom: 12px; }
+.about-media { display: flex; justify-content: flex-end; }
+.about-card { background: rgba(255,255,255,0.9); border: 1px solid #e5eaf3; border-radius: 16px; box-shadow: 0 10px 30px rgba(16,24,40,0.08); padding: 10px; max-width: 420px; }
+.about-image { display: block; width: 100%; height: auto; border-radius: 12px; }
+@media (max-width: 900px) { .about-container { grid-template-columns: 1fr; } .about-media { justify-content: center; } }
+</style>
+</head>
+
+<body
+    class="text-slate-900 selection:bg-blue-600/20 selection:text-blue-900 bg-gradient-to-br from-blue-50 via-slate-50 to-slate-100 min-h-screen overflow-x-hidden">
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">QEVRA</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link active" onclick="showPage('home')">Home</a></li>
+                <li class="nav-item"><a href="#day1" class="nav-link" onclick="showPage('day1')">Day 1</a></li>
+                <li class="nav-item"><a href="#day2" class="nav-link" onclick="showPage('day2')">Day 2</a></li>
+                <li class="nav-item"><a href="#day3" class="nav-link" onclick="showPage('day3')">Day 3</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- College Banner below Navbar -->
+    <section class="college-banner">
+        <div class="banner-container">
+            <img src="2.png.png" alt="MCE Logo 1" class="banner-logo">
+            <h2 class="banner-title">MANGAYARGARASI COLLEGE OF ENGINEERING</h2>
+            <img src="1.png.png" alt="MCE Logo 2" class="banner-logo">
+        </div>
+    </section>
+
+    <!-- Home Page -->
+    <div id="home" class="page active">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-title-wrap">
+                    <h1 class="hero-title">QEVRA FEST'26</h1>
+
+                </div>
+                <p class="hero-subtitle">Queries | Evolution | Excellence</p>
+                <div class="hero-divider"></div>
+                <div class="hero-buttons">
+                    <a href="https://forms.gle/tJywQkREA7JB6Wv8A" target="_blank" class="action-button register-btn">
+                        Register Now
+                    </a>
+                    <button class="action-button details-btn" onclick="showPage('day1')">
+                        More Details
+                    </button>
+                </div>
+            </div>
+            <div class="hero-background"></div>
+        </section>
+
+        <!-- Countdown Timer Section -->
+        <section class="countdown-section">
+            <div class="countdown-container">
+                <h2 class="countdown-title">Event Starts In</h2>
+                <div class="countdown-timer">
+                    <div class="timer-box">
+                        <div class="timer-value" id="timerDays">00</div>
+                        <div class="timer-label">Days</div>
+                    </div>
+                    <div class="timer-separator">:</div>
+                    <div class="timer-box">
+                        <div class="timer-value" id="timerHours">00</div>
+                        <div class="timer-label">Hours</div>
+                    </div>
+                    <div class="timer-separator">:</div>
+                    <div class="timer-box">
+                        <div class="timer-value" id="timerMinutes">00</div>
+                        <div class="timer-label">Minutes</div>
+                    </div>
+                    <div class="timer-separator">:</div>
+                    <div class="timer-box">
+                        <div class="timer-value" id="timerSeconds">00</div>
+                        <div class="timer-label">Seconds</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section">
+            <div class="about-container">
+                
+                <div class="about-content">
+                    <h2 class="countdown-title" style="text-align: center;">About the Event</h2>
+                    <div class="about-media"></div>
+                    <div class="about-card">
+                        <img src="3.jpeg" alt="Event Poster" class="about-image">
+                    </div>
+                </div>
+                <center>
+                    <p >Our Technical Festival was a three-day event organized by the Department of Computer Science and Engineering (CSE) and Artificial Intelligence & Machine Learning (AIML) of Mangayarkarasi College of Engineering. The festival was conducted to improve students’ technical skills, creativity, and confidence.<br><br> On Day 1, students participated in Paper Presentation (Xynapse), UI & UX Contest (Framux), Poster Presentation (AURA Post), and a Seminar (XPlore), which helped them share ideas and learn new concepts.<br><br> On Day 2 included exciting events like Coding Contest (Code Fest), Quiz (QuizTrix), and a Seminar (Brain X), where students tested their programming skills and general technical knowledge.<br><br> On Day 3, the festival concluded with a Hackathon (Hack Fest), where teams worked together to solve real-time problems. Overall, the technical festival was very useful and enjoyable, and it gave students a great opportunity to learn, explore, and develop their technical abilities.</p>
+                    
+                    
+                </center>
+            </div>
+                
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Day 1 Page -->
+    <div id="day1" class="page">
+        <section class="day-section">
+            <div class="day-container">
+                <h1 class="day-title">Day 1 - February 10, 2026</h1>
+                <p class="day-subtitle">9:00am - 3:00pm | CP Lab 1 & CP Lab 2</p>
+
+                <div class="accordion-container">
+                    <!-- XPlore Topic -->
+                    <div class="accordion-item">
+                        <button class="accordion-header" onclick="toggleAccordion(this)">
+                            <span class="accordion-title">XPlore (Seminar)</span>
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="content-body">
+                                <p class="content-description">An interactive seminar exploring innovative ideas and
+                                    emerging technologies in the field of computer science and software development.</p>
+                                <div class="content-details">
+                                    <div class="detail-item">
+                                        <span class="detail-label">Time:</span>
+                                        <span class="detail-value">9:30 AM - 11:00 PM</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">Venue:</span>
+                                        <span class="detail-value">CP Lab 1</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Xynapse Topic -->
+                    <div class="accordion-item">
+                        <button class="accordion-header" onclick="toggleAccordion(this)">
+                            <span class="accordion-title">Xynapse (Paper Presentation)</span>
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="content-body">
+                                <p class="content-description">
+                                    Event Name:-  Xynapse </p>
+                                <p class="content-description">
+                                    Objectives:- :<br>To encourage the presentation of innovative and research-oriented technical ideas.</p>
+                                <p class="content-description">
+                                    Description:- <br>Technical paper presentations emphasizing originality, relevance, and clarity.
+
+                                    <br><br>Themes:<br>
+                                    * AR / VR and Metaverse Technologies
+                                    <br>* Traffic Management Using AI
+                                    <br>* Remote Healthcare Solutions
+                                    <br>* Sustainable and Green Technologies
+                                    <br>* FinTech and Digital Transformation
+                                    <br>* Smart Campus Technologies
+                                    <br>* AI for Social Good<br>
+                                    <br>Submissions related to open and emerging technologies are also accepted.
+                                    </p>
+                                <p class="content-description">
+                                    Judging Criteria:-<br>Originality, Technical Depth, Relevance, Presentation Clarity, Q&A Response
+                                </p>
+                                <p class="content-description">
+                                    <br>Rules:- 
+                                    <br>* Maximum 3 members per team
+                                    <br>* 5 minutes presentation
+                                    <br>* 8–10 slides (PPT/PPTX only)
+                                </p>
+                                <div class="content-details">
+                                    <div class="detail-item">
+                                        <span class="detail-label">Time:</span>
+                                        <span class="detail-value">11:30 AM - 1:00 PM</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">Venue:</span>
+                                        <span class="detail-value">CP Lab 1</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Aura Post Topic -->
+                    <div class="accordion-item">
+                        <button class="accordion-header" onclick="toggleAccordion(this)">
+                            <span class="accordion-title">Aura Post (Poster Presentation)</span>
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="content-body">
+                                <p class="content-description">
+                                    Event Name:- Aura Post</p>
+                                <p class="content-description">
+                                    Objectives:- <br>To evaluate teamwork, problem-solving skills, and time management.</p>
+                                <p class="content-description">
+                                    Description:- <br>Teamwork & Coordination,
+                                    Poster Explanation & Clarity 
+
+                                    <br><br>Themes:
+                                    <br>
+                                    *Next-Gen Computing Technologies
+                                    <br>
+                                    *From Code to Impact
+                                    <br>
+                                    *Smart Systems for a Digital World
+                                    <br>
+                                    *Innovations in Computer Science
+                                    <br>
+                                    *Human–AI Collaboration</p>
+                                <p class="content-description">
+                                    Judging Criteria:-<br>Time taken to complete the task
+                                </p>
+                                <p class="content-description">
+                                    Rules:- <br>*A team may have 3 members only<br><br>
+                                    *The theme will be provided by the organizers<br><br>
+                                    *Posters must be prepared at home and presented during the event,Judges decision will be final.
+                                </p>
+                                <div class="content-details">
+                                    <div class="detail-item">
+                                        <span class="detail-label">Time:</span>
+                                        <span class="detail-value">2:00 PM - 3:15 PM</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">Venue:</span>
+                                        <span class="detail-value">CP Lab 2</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Framelt Topic -->
+                    <div class="accordion-item">
+                        <button class="accordion-header" onclick="toggleAccordion(this)">
+                            <span class="accordion-title">FramUX (UI/UX)</span>
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="content-body">
+                                <p class="content-description">
+                                    Event Name:- Frame UX</p>
+                                <p class="content-description">
+                                    Objectives:- <br>Precisely replicate a high-fidelity UI layout using Figma's core design tools.</p>
+                                <p class="content-description">
+                                    Description:- <br>Participants get a Master Reference image and raw assets, then recreate the page from a blank Figma canvas.
+                                    Success is judged by how closely their design matches the original. </p>
+                                <p class="content-description">
+                                    Judging Criteria:- <br>
+                                    *Fidelity (40)<br>
+                                    *Asset Usage (40)<br>
+                                    *Technical Accuracy (10) <br>
+                                    *Speed (10)<br>
+                                </p>
+                                <p class="content-description">
+                                    Rules:- <br>PC/Figma only no plugins, no external software, and no <br>pre-built templates or <br>copy-pasting.<br><br>
+                                    All elements (buttons/cards) must be manually constructed using <br>frames—no flat image imports.
+                                    <br><br>Duration:30 minutes
+                                   <br><br>Team size:1.</p>
+                                </p>
+                                <div class="content-details">
+                                    <div class="detail-item">
+                                        <span class="detail-label">Time:</span>
+                                        <span class="detail-value">3:30 PM - 5:00 PM</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">Venue:</span>
+                                        <span class="detail-value">CP Lab 2</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="day2" class="page">
+        <section class="day-section">
+            <div class="day-container">
+                <h1 class="day-title">Day 2 - February 11, 2026</h1>
+                <p class="day-subtitle">9:00am - 3:00pm | CP Lab 1 & CP Lab 2</p>
+
+                <div class="accordion-container">
+                    <!-- Brain X Topic -->
+                    <div class="accordion-item">
+                        <button class="accordion-header" onclick="toggleAccordion(this)">
+                            <span class="accordion-title">Brain X (Seminar)</span>
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="content-body">
+                                <p class="content-description">An engaging seminar focused on cognitive science,
+                                    artificial intelligence, and innovative problem-solving techniques. Explore the
+                                    intersection of human intelligence and technology.</p>
+                                <div class="content-details">
+                                    <div class="detail-item">
+                                        <span class="detail-label">Time:</span>
+                                        <span class="detail-value">9:00 AM - 10:30 AM</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">Venue:</span>
+                                        <span class="detail-value">CP Lab 1</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Code Fest Topic -->
+                    <div class="accordion-item">
+                        <button class="accordion-header" onclick="toggleAccordion(this)">
+                            <span class="accordion-title">Code Fest (Coding Contest)</span>
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="content-body">
+                                <p class="content-description">
+                                    Event Name:- Code Fest</p>
+                                <p class="content-description">
+                                    Objectives:- <br>Test the programming and coding skills</p>
+                                <p class="content-description">
+                                    Description:- <br>The team must go write a code that satisfies the testcases </p>
+                                <p class="content-description">
+                                    Judging Criteria:- <br>*Optimization,number of questions & testcases solved<br>*time & space
+                                    Complexity.
+                                </p>
+                                <p class="content-description">
+                                    Rules:- <br>Maximum 2 members per team and no electronics gadget.</p>
+                                </p>
+                                <div class="content-details">
+                                    <div class="detail-item">
+                                        <span class="detail-label">Time:</span>
+                                        <span class="detail-value">10:45 AM - 12:30 PM</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">Venue:</span>
+                                        <span class="detail-value">CP Lab 2</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quiztrix Topic -->
+                    <div class="accordion-item">
+                        <button class="accordion-header" onclick="toggleAccordion(this)">
+                            <span class="accordion-title">Quiztrix (Quiz)</span>
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="content-body">
+                                <p class="content-description">
+                                    Event name :- Quiztrix </p>
+                                <p class="content-description">
+                                    Objectives:-
+                                    <br>Test knowledge in technological trends and innovation.Assess communication, writing,
+                                    and analytical skills</p>
+                                <p class="content-description">
+                                    Description:- <br>Quiztrix is a three-round team-based quiz event that evaluates
+                                    participants through communication, writing, and virtual analytical challenges. </p>
+                                <p class="content-description">
+                                    Judging Criteria:-<br> *Accuracy and clarity
+                                    <br>*Logical and analytical thinking
+                                    <br>*Creativity and time management
+                                </p>
+                                <p class="content-description">
+                                    Rules:- <br>*Maximum 2 members per team
+                                    <br>*No electronic gadgets allowed</p>
+                                </p>
+                                <div class="content-details">
+                                    <div class="detail-item">
+                                        <span class="detail-label">Time:</span>
+                                        <span class="detail-value">1:30 PM - 3:15 PM</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">Venue:</span>
+                                        <span class="detail-value">CP Lab 1</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Day 3 Page -->
+    <div id="day3" class="page">
+        <section class="day-section">
+            <div class="day-container">
+                <h1 class="day-title">Day 3 - February 12, 2026</h1>
+                <p class="day-subtitle">9:00am - 3:00pm | CP Lab 1 & CP Lab 2</p>
+
+                <div class="accordion-container">
+                    <!-- Hack Fest Topic -->
+                    <div class="accordion-item">
+                        <button class="accordion-header" onclick="toggleAccordion(this)">
+                            <span class="accordion-title">Hack Fest (Hackathon)</span>
+                            <span class="accordion-icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="content-body">
+                                <p class="content-description">
+                                    Event name :- Hack Fest  </p>
+                                <p class="content-description">
+                                    Objectives:-
+                                    <br>Evaluate participants’ knowledge of current technological trends and innovations
+
+                                    <br>Assess problem-solving, analytical, communication, and technical writing skills
+
+                                    <br>Promote teamwork and effective time management
+                                </p>
+                                <p class="content-description">
+                                    Description:- <br><br>Domains: <br>*Web Development <br>*App Development <br>*AI & ML
+
+                                    <br><br>*Topics will be provided on the spot
+                                    
+                                    <br>*Pre-built projects are not allowed
+                                    
+                                    <br>*Participants must bring their own laptops </p>
+                                <p class="content-description">
+                                    Judging Criteria:- <br>*Accuracy and technical clarity
+
+                                    <br>*Logical and analytical thinking
+                                    
+                                    <br>*Creativity and problem-solving approach
+                                    
+                                    <br> *Time management and teamwork
+                                </p>
+                                <p class="content-description">
+                                    Rules:- <br>A maximum of 4 members per team</p>
+                                </p>
+                                <div class="content-details">
+                                    <div class="detail-item">
+                                        <span class="detail-label">Time:</span>
+                                        <span class="detail-value">10:00AM-3:00PM</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">Venue:</span>
+                                        <span class="detail-value">CP Lab 1 & CP Lab 2</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Created By MCE Students</p>
+        </div>
+    </footer>
+
+    <script src="student-script.js"></script>
+</body>
+
+</html>

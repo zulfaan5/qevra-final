@@ -8,7 +8,8 @@ function showPage(pageId) {
     const selectedPage = document.getElementById(pageId);
     if (selectedPage) {
         selectedPage.classList.add('active');
-        window.scrollTo(0, 0);
+        // Avoid automatic hash scroll or jump
+        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
     }
 
     // Update active nav link
@@ -135,9 +136,20 @@ const patterns = {
     department: /.{2,}/
 };
 
-// Initialize form
+// Initialize form and nav interception
 document.addEventListener('DOMContentLoaded', function() {
     console.log('DOMContentLoaded event fired');
+
+    // Prevent default anchor behavior for nav links to avoid auto-scrolling
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const target = this.getAttribute('href');
+            if (target && target.startsWith('#')) {
+                showPage(target.slice(1));
+            }
+        });
+    });
     
     // Start timer immediately
     startCountdownTimer();

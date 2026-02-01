@@ -10,17 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-<style>
-/***** About Section *****/
-.about-section { padding: 24px 20px 40px; background: transparent; }
-.about-container { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1.4fr 1fr; gap: 32px; align-items: start; }
-.about-title { font-size: clamp(1.4rem, 4.5vw, 2rem); font-weight: 900; margin-bottom: 12px; color: var(--text-dark); }
-.about-content p { color: var(--text-dark); font-size: 1rem; line-height: 1.8; margin-bottom: 12px; }
-.about-media { display: flex; justify-content: flex-end; }
-.about-card { background: rgba(255,255,255,0.9); border: 1px solid #e5eaf3; border-radius: 16px; box-shadow: 0 10px 30px rgba(16,24,40,0.08); padding: 10px; max-width: 420px; }
-.about-image { display: block; width: 100%; height: auto; border-radius: 12px; }
-@media (max-width: 900px) { .about-container { grid-template-columns: 1fr; } .about-media { justify-content: center; } }
-</style>
+
 </head>
 
 <body
@@ -32,6 +22,7 @@
             <h2 class="banner-title">MANGAYARGARASI COLLEGE OF ENGINEERING</h2>
             <img src="1.png.png" alt="MCE Logo 2" class="banner-logo">
         </div>
+        <p class="banner-subtitle">Approved by AICTE,New Delhi & Affiliated to Anna University,Chennai</p>
     </section>
 
     <!-- Navigation Bar moved below banner -->
@@ -51,12 +42,14 @@
         <!-- Hero Section -->
         <section class="hero">
             <div class="hero-content">
+                <div class="org">Organized By Department Of CSE & AIML</div>
                 <div class="hero-title-wrap">
+
                     <h1 class="hero-title">QEVRA FEST'26</h1>
 
                 </div>
                 <p class="hero-subtitle">Queries | Evolution | Excellence</p>
-                <div class="hero-divider"></div>
+
                 <div class="hero-buttons">
                     <a href="https://forms.gle/tJywQkREA7JB6Wv8A" target="_blank" class="action-button register-btn">
                         Register Now
@@ -101,14 +94,26 @@
         <section class="about-section">
             <div class="about-container">
                 <div class="about-content">
-                    <h2 class="countdown-title1" style="text-align: center;">About the Event</h2>
+                    <h2 class="about-title" style="text-align: center;">About the College</h2>
                     <div class="about-media"></div>
                     <div class="about-card">
                         <img src="3.jpeg" alt="Event Poster" class="about-image">
                     </div>
+                    <div>
+                        <p class="about-content p">Mangayarkarasi College Of Engineering Is Dedicated To The Cause Of
+                            Education And Endeavors To Develop Their Finest Potentialities According To Their Capacities
+                            And There By Prepare Them To Take Their Place In Domestic, Social And National Life
+                            Effectively. The College Is Approved By The All India Council For Technical Education, New
+                            Delhi And Affiliated To Anna University, Chennai.
+                        </p>
+                    </div>
                 </div>
-                <div style="text-align: center;">
-                    <p>Our Technical Festival will be a three-day event organized by the Department of Computer Science and Engineering (CSE) and Artificial Intelligence & Machine Learning (AIML) of Mangayarkarasi College of Engineering. The festival will be conducted to improve students’ technical skills, creativity, and confidence.<br><br> On Day 1, students will participate in Paper Presentation (Xynapse), UI & UX Contest (Framux), Poster Presentation (AURA Post), and a Seminar (XPlore), which will help them share ideas and learn new concepts.<br><br> Day 2 will include exciting events such as Coding Contest (Code Fest), Quiz (QuizTrix), and a Seminar (Brain X), where students will test their programming skills and general technical knowledge..<br><br> On Day 3, the festival will conclude with a Hackathon (Hack Fest), where teams will work together to solve real-time problems. <br><br>Overall, the technical festival will be useful and enjoyable, and it will provide students with a great opportunity to learn, explore, and develop their technical abilities.</p>
+                <div class="footer-map">
+                    <h4 class="about-title" style="text-align: center;">Location</h4>
+                    <iframe
+                        src="https://www.google.com/maps?q=Mangayarkarasi+College+of+Engineering+Madurai&output=embed"
+                        loading="lazy">
+                    </iframe>
                 </div>
             </div>
         </section>
@@ -120,7 +125,7 @@
         <section class="day-section">
             <div class="day-container">
                 <h1 class="day-title">Day 1 - February 10, 2026</h1>
-                <p class="day-subtitle">9:00am - 3:00pm | CP Lab 1 & CP Lab 2</p>
+                <p class="day-subtitle">9:00am - 3:15pm | CP Lab 1 & CP Lab 2</p>
 
                 <div class="accordion-container">
                     <!-- XPlore Topic -->
@@ -131,8 +136,7 @@
                         </button>
                         <div class="accordion-content">
                             <div class="content-body">
-                                <p class="content-description"> An interactive seminar exploring innovative ideas and
-                                    emerging technologies in the field of computer science and software development.</p>
+                                <p class="content-description" style="font-family: Segoe UI;"><span class="detail-label">Topic:-</span><span>   </span> How To Be AI Ready</p>
                                 <div class="content-details">
                                     <div class="detail-item">
                                         <span class="detail-label">Time:</span>
@@ -155,11 +159,13 @@
                         <div class="accordion-content">
                             <div class="content-body">
                                 <p class="content-description">
-                                    Event Name:-  Xynapse </p>
+                                    Event Name:- Xynapse </p>
                                 <p class="content-description">
-                                    Objectives:- :<br>To encourage the presentation of innovative and research-oriented technical ideas.</p>
+                                    Objectives:- :<br>To encourage the presentation of innovative and research-oriented
+                                    technical ideas.</p>
                                 <p class="content-description">
-                                    Description:- <br>Technical paper presentations emphasizing originality, relevance, and clarity.
+                                    Description:- <br>Technical paper presentations emphasizing originality, relevance,
+                                    and clarity.
 
                                     <br><br>Themes:<br>
                                     &#8226; AR / VR and Metaverse Technologies
@@ -170,12 +176,13 @@
                                     <br>&#8226; Smart Campus Technologies
                                     <br>&#8226; AI for Social Good<br>
                                     <br>Submissions related to open and emerging technologies are also accepted.
-                                    </p>
-                                <p class="content-description">
-                                    Judging Criteria:-<br>Originality, Technical Depth, Relevance, Presentation Clarity, Q&A Response
                                 </p>
                                 <p class="content-description">
-                                    <br>Rules:- 
+                                    Judging Criteria:-<br>Originality, Technical Depth, Relevance, Presentation Clarity,
+                                    Q&A Response
+                                </p>
+                                <p class="content-description">
+                                    <br>Rules:-
                                     <br>&#8226; Maximum 3 members per team
                                     <br>&#8226; 5 minutes presentation
                                     <br>&#8226; 8–10 slides (PPT/PPTX only)
@@ -205,10 +212,11 @@
                                 <p class="content-description">
                                     Event Name:- Aura Post</p>
                                 <p class="content-description">
-                                    Objectives:- <br>To evaluate teamwork, problem-solving skills, and time management.</p>
+                                    Objectives:- <br>To evaluate teamwork, problem-solving skills, and time management.
+                                </p>
                                 <p class="content-description">
                                     Description:- <br>Teamwork & Coordination,
-                                    Poster Explanation & Clarity 
+                                    Poster Explanation & Clarity
 
                                     <br><br>Themes:
                                     <br>
@@ -220,14 +228,16 @@
                                     <br>
                                     &#8226;Innovations in Computer Science
                                     <br>
-                                    &#8226;Human–AI Collaboration</p>
+                                    &#8226;Human–AI Collaboration
+                                </p>
                                 <p class="content-description">
                                     Judging Criteria:-<br>Time taken to complete the task
                                 </p>
                                 <p class="content-description">
                                     Rules:- <br>&#8226;A team may have 3 members only<br>
                                     &#8226;The theme will be provided by the organizers<br>
-                                    &#8226;Posters must be prepared at home and presented during the event,Judges decision will be final.
+                                    &#8226;Posters must be prepared at home and presented during the event,Judges
+                                    decision will be final.
                                 </p>
                                 <div class="content-details">
                                     <div class="detail-item">
@@ -253,9 +263,11 @@
                                 <p class="content-description">
                                     Event Name:- Frame UX</p>
                                 <p class="content-description">
-                                    Objectives:- <br>Precisely replicate a high-fidelity UI layout using Figma's core design tools.</p>
+                                    Objectives:- <br>Precisely replicate a high-fidelity UI layout using Figma's core
+                                    design tools.</p>
                                 <p class="content-description">
-                                    Description:- <br>Participants get a Master Reference image and raw assets, then recreate the page from a blank Figma canvas.
+                                    Description:- <br>Participants get a Master Reference image and raw assets, then
+                                    recreate the page from a blank Figma canvas.
                                     Success is judged by how closely their design matches the original. </p>
                                 <p class="content-description">
                                     Judging Criteria:- <br>
@@ -265,15 +277,18 @@
                                     &#8226;Speed (10)<br>
                                 </p>
                                 <p class="content-description">
-                                    Rules:- <br>PC/Figma only no plugins, no external software, and no <br>pre-built templates or <br>copy-pasting.<br><br>
-                                    All elements (buttons/cards) must be manually constructed using <br>frames—no flat image imports.
+                                    Rules:- <br>PC/Figma only no plugins, no external software, and no <br>pre-built
+                                    templates or <br>copy-pasting.<br><br>
+                                    All elements (buttons/cards) must be manually constructed using <br>frames—no flat
+                                    image imports.
                                     <br><br>Duration:30 minutes
-                                   <br><br>Team size:1.</p>
+                                    <br><br>Team size:1.
+                                </p>
                                 </p>
                                 <div class="content-details">
                                     <div class="detail-item">
                                         <span class="detail-label">Time:</span>
-                                        <span class="detail-value">3:30 PM - 5:00 PM</span>
+                                        <span class="detail-value">11:00 PM - 3:15 PM</span>
                                     </div>
                                     <div class="detail-item">
                                         <span class="detail-label">Venue:</span>
@@ -306,9 +321,7 @@
                         </button>
                         <div class="accordion-content">
                             <div class="content-body">
-                                <p class="content-description">An engaging seminar focused on cognitive science,
-                                    artificial intelligence, and innovative problem-solving techniques. Explore the
-                                    intersection of human intelligence and technology.</p>
+                                <p class="content-description"><span class="detail-label">Topic:-</span>AI In Creative Tech & The High Demand For UI/UX</p>
                                 <div class="content-details">
                                     <div class="detail-item">
                                         <span class="detail-label">Time:</span>
@@ -337,7 +350,8 @@
                                 <p class="content-description">
                                     Description:- <br>The team must go write a code that satisfies the testcases </p>
                                 <p class="content-description">
-                                    Judging Criteria:- <br>&#8226;Optimization,number of questions & testcases solved<br>&#8226;time & space
+                                    Judging Criteria:- <br>&#8226;Optimization,number of questions & testcases
+                                    solved<br>&#8226;time & space
                                     Complexity.
                                 </p>
                                 <p class="content-description">
@@ -369,8 +383,10 @@
                                     Event name :- Quiztrix </p>
                                 <p class="content-description">
                                     Objectives:-
-                                    <br>Test knowledge in technological trends and innovation.Assess communication, writing,
-                                    and analytical skills</p>
+                                    <br>Test knowledge in technological trends and innovation.Assess communication,
+                                    writing,
+                                    and analytical skills
+                                </p>
                                 <p class="content-description">
                                     Description:- <br>Quiztrix is a three-round team-based quiz event that evaluates
                                     participants through communication, writing, and virtual analytical challenges. </p>
@@ -381,7 +397,8 @@
                                 </p>
                                 <p class="content-description">
                                     Rules:- <br>&#8226;Maximum 2 members per team
-                                    <br>&#8226;No electronic gadgets allowed</p>
+                                    <br>&#8226;No electronic gadgets allowed
+                                </p>
                                 </p>
                                 <div class="content-details">
                                     <div class="detail-item">
@@ -408,7 +425,7 @@
         <section class="day-section">
             <div class="day-container">
                 <h1 class="day-title">Day 3 - February 12, 2026</h1>
-                <p class="day-subtitle">9:00am - 3:00pm | CP Lab 1 & CP Lab 2</p>
+                <p class="day-subtitle">9:00am - 3:15pm | CP Lab 1 & CP Lab 2</p>
 
                 <div class="accordion-container">
                     <!-- Hack Fest Topic -->
@@ -420,7 +437,7 @@
                         <div class="accordion-content">
                             <div class="content-body">
                                 <p class="content-description">
-                                    Event name :- Hack Fest  </p>
+                                    Event name :- Hack Fest </p>
                                 <p class="content-description">
                                     Objectives:-
                                     <br>Evaluate participants’ knowledge of current technological trends and innovations
@@ -430,11 +447,13 @@
                                     <br>Promote teamwork and effective time management
                                 </p>
                                 <p class="content-description">
-                                    Description:- <br><br>Domains: <br>&#8226;Web Development <br>&#8226;App Development <br>&#8226;AI & ML
+                                    Description:- <br><br>Domains: <br>&#8226;Web Development <br>&#8226;App Development
+                                    <br>&#8226;AI & ML
 
                                     <br><br>&#8226;Topics will be provided on the spot
                                     <br>&#8226;Pre-built projects are not allowed
-                                    <br>&#8226;Participants must bring their own laptops </p>
+                                    <br>&#8226;Participants must bring their own laptops
+                                </p>
                                 <p class="content-description">
                                     Judging Criteria:- <br>&#8226;Accuracy and technical clarity
 
@@ -464,11 +483,26 @@
     </div>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <p>Created By MCE Students</p>
+    <footer class="footer1">
+        <div class="footer-content1">
+
+            <p><span style="font-weight: 900;">Contact Us:</span><br>
+                Address: 7-1-139, 1st street, Mangayarkarasi Nagar, Paravai<br> Madurai - 625 402.
+                <br>
+                PH: +914522668635,+914522665455
+                <br>
+                E-Mail: mangai.enggcoll@gmail.com
+            </p>
+
+        </div>
+
+    </footer>
+    <footer class="footer2">
+        <div class="footer-content2">
+            <p>© 2026 Qevra Fest-Designed and Devoloped By CSE Students </p>
         </div>
     </footer>
+
 
     <script src="student-script.js"></script>
 </body>

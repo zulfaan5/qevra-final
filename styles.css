@@ -339,6 +339,15 @@ body {
     margin-top: 45px;
     /* reduce top margin to move buttons up */
 }
+.hero-buttonsday1 {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    margin-bottom: 55px;
+    /* reduce top margin to move buttons up */
+}
 
 @keyframes fadeInDown {
     from {
@@ -414,7 +423,7 @@ body {
 }
 
 .details-btn {
-    background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
 }
 
 /***** About Section *****/

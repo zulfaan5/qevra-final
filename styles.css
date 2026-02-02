@@ -479,7 +479,7 @@ body {
     box-shadow: 0 10px 30px rgba(16, 24, 40, 0.08);
     padding: 10px;
     display: grid;
-    max-width: 600px;
+    max-width: 80%;
     margin: 0 auto;
 }
 
